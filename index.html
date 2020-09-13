@@ -11,13 +11,14 @@
           shape: 'pill',
           color: 'gold',
           layout: 'vertical',
-          label: 'pay'
+          label: 'pay',
+          
       },
       createOrder: function(data, actions) {
           return actions.order.create({
               purchase_units: [{
                   amount: {
-                      value: '100'
+                      value: '1'
                   }
               }]
           });
